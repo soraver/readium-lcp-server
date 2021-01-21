@@ -265,7 +265,7 @@ func BuildRWPPFromLPF(lpfPath string, rwppPath string) error {
 		defer reader.Close()
 		_, err = io.Copy(writer, reader)
 		if err != nil {
-			return err
+			//return err
 		}
 	}
 	return nil
